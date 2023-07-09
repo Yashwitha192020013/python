@@ -1,0 +1,13 @@
+print("Enter Two Numbers: ", end="")
+no = int(input())
+nt = int(input())
+a = no
+b = nt
+while b!=0:
+    temp = b
+    b = a%b
+    a = temp
+gcd = a
+lcm = int((no*nt)/gcd)
+print("\nLCM (" + str(no) + ", " + str(nt) + ") = ", lcm)
+print("GCD (" + str(no) + ", " + str(nt) + ") = ", gcd)
